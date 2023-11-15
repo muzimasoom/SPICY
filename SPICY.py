@@ -1203,7 +1203,7 @@ def trt2(ids,passlist):
 				'fb_api_caller_class':'com.facebook.account.login.protocol.Fb4aAuthHandler',
 				'access_token':'350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
 			head = {
-				'x-fb-rlafr.'0',
+				'x-fb-rlafr. '0',
 'access-control-allow-origin': '*',
 'facebook-api-version': 'v18.0',
 'strict-transport-security': 'max-age=15552000',
