@@ -842,6 +842,8 @@ def fcrack(uid,pwx,tl):
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
+    'method': 'GET',
+	'scheme': 'https',
     'user-agent': ua}
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
