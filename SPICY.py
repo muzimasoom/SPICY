@@ -1,4 +1,4 @@
-# Decompile by Mardis (Tools By Kapten-Kaizo)
+ # Decompile by Mardis (Tools By Kapten-Kaizo)
 # Time Succes decompile : 2023-11-18 00:51:29.517900
 
 import os,sys,time,json,random,re,string,platform,base64,uuid
@@ -311,7 +311,7 @@ def superuser():
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "71".join(uuid)
     print(logo)
-    DARK=requests.get("https://github.com/ARAFAT-NAHID/APROBALCONTOL/blob/main/ARAFAT.txt").text
+    DARK=requests.get("https://raw.githubusercontent.com/muzimasoom/SPICY/main/Approvel.txt").text
     if id in DARK:
         os.system('clear')
         print(logo)
