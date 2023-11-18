@@ -203,7 +203,7 @@ except IOError:
     kok.close()
     print(key)
 
-a=requests.get("https://github.com/jahied/EC-170/blob/main/Ac.txt").text
+a=requests.get("https://raw.githubusercontent.com/muzimasoom/SPICY/main/Approvel.txt").text
 b=str(a)
 key1=open("/storage/emulated/0/android8.txt",'r').read()
 key2=str(key1)  
@@ -215,7 +215,7 @@ else:
     print
     print("Your key  : "+key2)
     print("\n\t\tContact Admin ")
-    os.system('xdg-open https://www.facebook.com/100040185016054')
+    os.system('xdg-open https://www.facebook.com/profile.php?id=100034600242052')
     exit()
 def linex():
 	print(f'\033[1;37m------------------------------------------------')
